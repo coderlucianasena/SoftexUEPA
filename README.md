@@ -4,7 +4,7 @@
 
 ### Aula 01: Introdução à Lógica de Programação
 **Instituição:** Softex e UEPA
-**Professor:** Marcos Rodrigo
+**Professor:** Lyanh Vinicios
 
 ---
 
@@ -141,7 +141,7 @@ git config --list
 git init
 
 # Clonar repositório remoto
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/coderlucianasena/SoftexUEPA.git
 ```
 
 ##### 📝 Trabalhando com Arquivos

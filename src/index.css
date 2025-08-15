@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  code {
+    font-family: 'Fira Code', monospace;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm sm:text-base;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-50 hover:bg-secondary-200 text-secondary-700 font-medium py-2 px-4 rounded-lg border border-secondary-200 transition-colors duration-200 text-sm sm:text-base;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg sm:rounded-xl shadow-sm border border-gray-200 p-4 sm:p-6 hover:shadow-md transition-shadow duration-200;
+  }
+  
+  /* Utilitários responsivos */
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8;
+  }
+  
+  .text-responsive-h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+  
+  .text-responsive-h2 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+  }
+  
+  .text-responsive-body {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+  
+  .spacing-responsive {
+    @apply space-y-4 sm:space-y-6 md:space-y-8;
+  }
+  
+  .padding-responsive {
+    @apply p-4 sm:p-6 md:p-8;
+  }
+  
+  /* Garantir que bordas arredondadas sejam exibidas */
+  .rounded-container {
+    overflow: visible;
+    border-radius: inherit;
+  }
+  
+  /* Prevenir clipping de bordas arredondadas */
+  .no-clip {
+    clip-path: none;
+    overflow: visible;
+  }
+}
