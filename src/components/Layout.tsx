@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { BookOpen, Code , Home, Menu, X } from 'lucide-react'
+import { BookOpen, Code, Home, Menu, X, Github } from 'lucide-react'
 import { useState } from 'react'
 
 interface LayoutProps {
@@ -15,6 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
     { name: 'Início', href: '/', icon: Home },
     { name: 'Aulas', href: '/aulas', icon: BookOpen },
     { name: 'Códigos', href: '/codigos', icon: Code },
+    { name: 'GitHub', href: '/github', icon: Github },
   ]
 
   const isActive = (path: string) => location.pathname === path
